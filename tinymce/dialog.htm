@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#proPlayer.title}</title>
+	<script type="text/javascript" src="js/tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+</head>
+<body>
+
+<form onsubmit="ProPlayerDialog.insert();return false;" action="#">
+	<p>Please enter your video URL(s) comma separated:</p>
+	<p><textarea id="videoURL" name="videoURL" class="text" cols="65" rows="3"></textarea></p>
+	<p>Please enter your video preview image:</p>
+	<p><textarea id="videoPreviewURL" name="videoPreviewURL" class="text" cols="65" rows="1"></textarea></p>
+	<p>Please enter RTMP Server (if exists):</p>
+	<p><textarea id="videoRtmpServer" name="videoRtmpServer" class="text" cols="65" rows="1"></textarea></p>
+	<p>
+		<div id="pro-player-properties">
+			<p>
+				<label for="pDefaultWidth"><strong style="margin-right: 13px">Width</strong></label>
+				<input id="pDefaultWidth" name="pDefaultWidth" type="text" class="text" style="width: 40px" />&nbsp;px
+			</p>
+			<p>
+				<label for="pDefaultHeight"><strong style="margin-right: 9px">Height</strong></label>
+				<input id="pDefaultHeight" name="pDefaultHeight" type="text" class="text" style="width: 40px" />&nbsp;px
+			</p>
+			<p>
+				<label for="pDefaultType"><strong style="margin-right: 20px">Type</strong></label>
+				<select id="pDefaultType" name="pDefaultType" class="text" style="width: 90px">
+					<option value="video" selected="true">video</option>
+					<option value="sound">sound</option>
+					<option value="rtmp">rtmp</option>
+				</select>
+			</p>
+			<p>
+				<label for="pDefaultRepeat"><strong style="margin-right: 20px">Repeat</strong></label>
+				<select id="pDefaultRepeat" name="pDefaultRepeat" class="text" style="width: 90px">
+					<option value="false" selected="true">False</option>
+					<option value="true">True</option>
+				</select>
+			</p>
+			<p>
+				<label for="pDefaultAutoStart"><strong style="margin-right: 20px">Auto Start Playing</strong></label>
+				<select id="pDefaultAutoStart" name="pDefaultAutoStart" class="text" style="width: 90px">
+					<option value="false" selected="true">False</option>
+					<option value="true">True</option>
+				</select>
+			</p>
+		</div>
+	</p>
+
+	<div class="mceActionPanel">
+		<div style="float: left">
+			<input type="button" id="insert" name="insert" value="{#insert}" onclick="ProPlayerDialog.insert();" />
+		</div>
+
+		<div style="float: right">
+			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		</div>
+	</div>
+</form>
+
+</body>
+</html>

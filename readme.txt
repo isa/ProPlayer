@@ -4,7 +4,7 @@ Donate link: http://isagoksu.com/donations/
 Tags: youtube, vimeo, google, veoh, myspace, dailymotion, youku, flv, mp4, mp3, avi, mov, video, embed
 Requires at least: 2.7
 Tested up to: 3.2.1
-Stable tag: tags/4.7.8
+Stable tag: 4.7.8
 
 Display videos from various online sources (YouTube, Vimeo, Veoh, etc) in one single player, 27 different skins, playlist system, rating system, etc.
 

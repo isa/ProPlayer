@@ -3,23 +3,23 @@ Contributors: isa.goksu
 Donate link: http://isagoksu.com/donations/
 Tags: youtube, vimeo, google, veoh, myspace, dailymotion, youku, flv, mp4, mp3, avi, mov, video, embed
 Requires at least: 2.7
-Tested up to: 2.8.6
-Stable tag: tags/4.7.7
+Tested up to: 3.2.1
+Stable tag: tags/4.7.8
 
 Display videos from various online sources (YouTube, Vimeo, Veoh, etc) in one single player, 27 different skins, playlist system, rating system, etc.
 
 == Description ==
 
-Places online videos (YouTube, Vimeo, Veoh, Youku, Dailymotion, etc..) into your post by using JW FLV Player. 10,000 downloads in first 2 months, and still counting! Here are couple nice features: 27 different Skins, Custom Playlists, Youtube Playlists, Video Ratings, Audio Visualizer, Displaying Watermarks, and much more.. 
+Places online videos (YouTube, Vimeo, Veoh, Youku, Dailymotion, etc..) into your post by using JW FLV Player. 10,000 downloads in first 2 months, and still counting! Here are couple nice features: 27 different Skins, Custom Playlists, Youtube Playlists, Video Ratings, Audio Visualizer, Displaying Watermarks, and much more..
 
 Currently supported video sources are:
 
 * All files that you've uploaded to your server (movies, images, etc..)
 * Dailymotion
-* Google Video 
-* MySpace 
+* Google Video
+* MySpace
 * Veoh (music videos are not supported)
-* Vimeo 
+* Vimeo
 * Youtube (with playlists)
 * Youku
 * With a little help, new sources could be added soon..
@@ -38,13 +38,13 @@ It's pretty simple to install. Just follow the common intention:
 
 That's it. The usage is like this:
 
-        [pro-player]http://www.youtube.com/watch?v=2YAvfxA6a94[/pro-player] 
+        [pro-player]http://www.youtube.com/watch?v=2YAvfxA6a94[/pro-player]
         [pro-player width="500" height="500"]http://vimeo.com/1473498[/pro-player]
         [pro-player type="mp4"]http://www.mydomain.com/media/awesome.mp4[/pro-player]
 
 If you're a template developer or you want to show a video in a fixed position in the site:
 
-		<?php 
+		<?php
 		    print insert_proplayer(
 		         array(
 		            "width" => "530",
@@ -52,7 +52,7 @@ If you're a template developer or you want to show a video in a fixed position i
 		            "playlist" => "bottom"
 		         ),
 		         "http://www.youtube.com/watch?v=2YAvfxA6a94"
-		    ); 
+		    );
 		?>
 
 For more information about video sources and their addresses syntax, just visit my blog. You'll see a page that explains it. Please <a href="http://isagoksu.com/video-tests">go visit</a>
@@ -86,7 +86,7 @@ The only thing you need to do is adding a type attribute for your video file if 
 
 Please check the usages/installation section. Basically, you need to call pro-player function with above pro-player snippets.
 
-		<?php 
+		<?php
 		    print insert_proplayer(
 		         array(
 		            "width" => "530",
@@ -94,24 +94,24 @@ Please check the usages/installation section. Basically, you need to call pro-pl
 		            "playlist" => "bottom"
 		         ),
 		         "http://www.youtube.com/watch?v=2YAvfxA6a94"
-		    ); 
+		    );
 		?>
 
 You can place above usage to anywhere in your WordPress site.
 
 = Can I change the width and height? =
 
-Width, height and type are optional attributes. You can pass these attributes to change the width and height: 
+Width, height and type are optional attributes. You can pass these attributes to change the width and height:
 
-        [pro-player width="500" height="500"]http://vimeo.com/1473498[/pro-player] 	
+        [pro-player width="500" height="500"]http://vimeo.com/1473498[/pro-player]
 
-Defaults for these attributes will be used if you don't pass them. And defaults are 'width' = 530, 'height' = 253. If you wanna change the defaults just go and edit plugin source. It's really easy. 
+Defaults for these attributes will be used if you don't pass them. And defaults are 'width' = 530, 'height' = 253. If you wanna change the defaults just go and edit plugin source. It's really easy.
 
 = Isn't there any button or something to add a new video? =
 
 Yeah, if you don't wanna type things, just use the editor button to add a new video. It's so easy. (This feature only available after 2.0 release)
 
-= Can I change the theme of the player? = 
+= Can I change the theme of the player? =
 
 Yes you can. You can even add some add-ons like Ad system, etc.. Just check the addons page site <a href="http://www.longtailvideo.com/addons" target="_new">JW FLV Media Player</a> for details.
 
@@ -121,7 +121,7 @@ Yes there is. Just go to the options page. You'll see a bunch of (26) new skins 
 
 = Can I style a little bit more? =
 
-Yes, if you wanna style your player container like adding borders, changing background etc, just 
+Yes, if you wanna style your player container like adding borders, changing background etc, just
 define "div.pro-player-container" in your CSS file:
 
         div.pro-player-container {
@@ -146,7 +146,7 @@ You can add me on twitter http://twitter.com/IsaGoksu or you can just follow the
 
 = I want MegaVideo? =
 
-Guys I'm really sorry for that, but today I looked at megavideo site. And their video API is full of ads. If you don't have premium account (which I don't have), writing something over that API is really tricky, 'coz every time you develop something, they will change the API according to their needs. Free service doesn't have a fixed API. If the demand for that site is so high, I'll look at again. But for now, I don't wanna spend so much energy on that. 
+Guys I'm really sorry for that, but today I looked at megavideo site. And their video API is full of ads. If you don't have premium account (which I don't have), writing something over that API is really tricky, 'coz every time you develop something, they will change the API according to their needs. Free service doesn't have a fixed API. If the demand for that site is so high, I'll look at again. But for now, I don't wanna spend so much energy on that.
 
 = How can I add rating system for my videos? =
 
@@ -204,7 +204,7 @@ If you don't want to play automatically, leave repeat as true, and set only auto
 
 Just add your files in comma separated form. Please read above answers for more information. Usage:
 
-        [pro-player repeat='true']http://mydomain.com/my-song-1.mp3,http://mydomain.com/my-song-2.mp3,http://mydomain.com/my-song-3.mp3[/pro-player]        
+        [pro-player repeat='true']http://mydomain.com/my-song-1.mp3,http://mydomain.com/my-song-2.mp3,http://mydomain.com/my-song-3.mp3[/pro-player]
 
 = Can I enable auto play? =
 
@@ -248,7 +248,7 @@ Yes you can. The only thing you need to do is upgrade the plugin to 2.0+ version
 
 = Sometimes I see this video is not available? =
 
-It means that your video link is broken, or the video server blocked your server's IP range for a certain time/or all times. Guys, this is very common problem. All of you know that we're retrieving those sites' videos by some tricky codes. Not every service has an API like YouTube. If they don't wanna share their video with your server, I can't do a much there :S I'm sorry. Then again, just try again after some time. Maybe it might work. 
+It means that your video link is broken, or the video server blocked your server's IP range for a certain time/or all times. Guys, this is very common problem. All of you know that we're retrieving those sites' videos by some tricky codes. Not every service has an API like YouTube. If they don't wanna share their video with your server, I can't do a much there :S I'm sorry. Then again, just try again after some time. Maybe it might work.
 
 = Well, but other players are showing those videos? =
 
@@ -270,7 +270,7 @@ One thing is I'm too busy for a long time. And I really don't have much time to 
 
 = I'm having some PHP errors? =
 
-Guys, I'm trying this plugin in 2 different servers which they have different settings and setup. As I wrote above, if you've PHP version 5+, you shouldn't see any errors. Then again, I tried to put some extra code to just adjust a little bit more support on early PHP 5 versions. But still no PHP 4 support. If you have PHP 4 on your server, please use version 2.0.1. 
+Guys, I'm trying this plugin in 2 different servers which they have different settings and setup. As I wrote above, if you've PHP version 5+, you shouldn't see any errors. Then again, I tried to put some extra code to just adjust a little bit more support on early PHP 5 versions. But still no PHP 4 support. If you have PHP 4 on your server, please use version 2.0.1.
 
 If you don't know what is PHP, or what version you have, please ask it to your hosting company by mail. They will tell you.
 
@@ -291,7 +291,7 @@ Truely I have no clue :P. I just never tried. Maybe you can try and let us know?
 
 = Can I copy your code for my own web projects? =
 
-I've changed the license from GPL to BSD. So you can do whatever you want. If you wanna use in commercial project, do it! If you wanna change the player code just do it! The only thing here is I'm using JW Media Player. It's license is under GPL. You need to note that.
+I've changed the license from GPL to Apache2. So you can do whatever you want as long as you send me the updates. If you wanna use in commercial project, do it! If you wanna change the player code just do it! The only thing here is I'm using JW Media Player. It's license is under GPL. You need to note that.
 
 If you want support or custom modifications, but you don't know how to do just drop me an e-mail and let's take it from there.
 
@@ -326,7 +326,13 @@ Here are some screenshots from the player.
 
 I've added simpletest support to the project. And I'm also releasing 4.7.5 with unit tests. So developers who want to continue on that are more than welcome :)
 
+Guys, I'm also placing the project under http://github.com/isa/ProPlayer. I won't be able to continue the work as much since I've tons of other stuff to focus right now. It's under Apache2 license as I mentioned before, so please fork your patches add-ons and let me know. Otherwise I'll probably remove the project from WordPress..
+
 == Change History ==
+
+version 4.7.8
+
+* Security fix (reported exploit)
 
 version 4.7.7
 

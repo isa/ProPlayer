@@ -1,5 +1,9 @@
 <?php
-   require_once dirname(dirname(dirname(dirname(__FILE__)))) . "/wp-config.php";
+   if file_exists(dirname(dirname(dirname(dirname(__FILE__)))) . "/wp-config.php") {
+      require_once dirname(dirname(dirname(dirname(__FILE__)))) . "/wp-config.php";
+   } else {
+      require_once dirname(dirname(dirname(dirname(dirname(__FILE__))))) . "/wp-config.php"
+   }
 
    if (!class_exists("PlaylistController")) {
       class PlaylistController {

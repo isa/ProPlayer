@@ -4,7 +4,7 @@
    Plugin URI: http://isagoksu.com/proplayer-wordpress-plugin/
    Description: Display videos from various online sources in a Custom FLV Player. For details please visit <a href="http://isagoksu.com/proplayer-wordpress-plugin/" target="_new">project page</a> for more information.
    Author: Isa Goksu
-   Version: 4.7.8
+   Version: 4.7.9.1
    Author URI: http://isagoksu.com
 
    Special thanks to:

@@ -4,7 +4,7 @@ Donate link: http://isagoksu.com/donations/
 Tags: youtube, vimeo, google, veoh, myspace, dailymotion, youku, flv, mp4, mp3, avi, mov, video, embed
 Requires at least: 2.7
 Tested up to: 3.2.1
-Stable tag: 4.7.8
+Stable tag: 4.7.9.1
 
 Display videos from various online sources (YouTube, Vimeo, Veoh, etc) in one single player, 27 different skins, playlist system, rating system, etc.
 
@@ -329,6 +329,14 @@ I've added simpletest support to the project. And I'm also releasing 4.7.5 with 
 Guys, I'm also placing the project under http://github.com/isa/ProPlayer. I won't be able to continue the work as much since I've tons of other stuff to focus right now. It's under Apache2 license as I mentioned before, so please fork your patches add-ons and let me know. Otherwise I'll probably remove the project from WordPress..
 
 == Change History ==
+
+version 4.7.9.1
+
+* Fixed parsing problem
+
+version 4.7.9
+
+* Added support to use wp-config files configured one level above for security reasons. (Big thanks to <a href="http://kaiarmstrong.com">Kai Armstrong</a> for his patch)
 
 version 4.7.8
 
